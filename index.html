@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Word Bluff</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Home screen -->
+<div class="home">
+    <div class="navbar flex">
+        <h1>Word Bluff</h1>
+    </div>
+    <div class="main">
+        <div class="text flex">
+            <h2>Let's catch the spy</h2>
+        </div>
+        <div class="container">
+            <div class="add">
+                <input type="text" id="playerDetail" placeholder="Enter your name" class="name">
+                <button class="addbtn" style="width: 60px;">Add</button>
+            </div>
+            <div class="players"></div>
+        </div>
+        <div class="start">
+            <button class="btnStart"><p>START 🚀</p></button>
+        </div>
+    </div>
+</div>
+
+<!-- Game screen -->
+<div class="game">
+    <div class="navbar flex">
+        <h1>Word Bluff</h1>
+    </div>
+    <div class="cardContainer"></div>
+    <div class="controls flex">
+        <button class="nextplayer">Next Player</button>
+        <button class="restart">Restart</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

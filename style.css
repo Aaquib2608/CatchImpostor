@@ -1,0 +1,46 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+body { background-color: #f2f2f2; }
+
+/* Navbar */
+.navbar { height: 6vh; background-color: red; color: white; display: flex; justify-content: center; align-items: center; font-size: 1.5rem; }
+
+/* Flex utility */
+.flex { display: flex; justify-content: center; align-items: center; }
+
+/* Home screen */
+.main { background-color: aqua; min-height: 94vh; padding: 2vw; }
+.container { background-color: #aee9ae; height: 65vh; overflow-y: auto; padding: 1vw; border-radius: 10px; margin-bottom: 2vh; }
+.add { display: flex; gap: 2vw; margin-bottom: 1vh; }
+.name { flex: 1; height: 45px; padding: 0.5rem; font-size: 1rem; border-radius: 5px; border: 1px solid #888; }
+.addbtn button, .start button, .nextplayer button, .restart button { font-size: 1rem; padding: 0.7rem 1rem; border-radius: 8px; border: none; cursor: pointer; background-color: #ff9800; color: white; transition: transform 0.1s; }
+.addbtn button:active, .start button:active, .nextplayer button:active, .restart button:active { transform: scale(0.97); }
+
+/* Players list */
+.players { background-color: pink; height: 50vh; overflow-y: auto; padding: 1vw; border-radius: 8px; }
+.player1 { background-color: #d3ff87; height: 6vh; margin: 0.5vh 0; display: flex; align-items: center; padding-left: 2vw; border-radius: 5px; font-size: 1rem; }
+
+/* Start button */
+.start { margin: 2vh 0; display: flex; justify-content: center; }
+.btnStart > p { font-size: 1.5rem; }
+
+/* Game screen */
+.game { display: none; flex-direction: column; align-items: center; padding: 2vw; }
+.cardContainer { display: flex; justify-content: center; align-items: center; margin-top: 4vh; min-height: 55vh; width: 100%; }
+.card { background-color: cyan; width: 90%; max-width: 400px; height: 50vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; border-radius: 10px; padding: 1rem; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+.greet { font-size: 1.2rem; font-weight: bold; }
+.hide { position: relative; background-color: goldenrod; width: 80%; height: 15vh; display: flex; justify-content: center; align-items: center; border-radius: 5px; flex-direction: column; }
+.word { display: none; font-size: 1.3rem; font-weight: bold; word-wrap: break-word; }
+.prompt { font-size: 0.9rem; margin-top: 0.3rem; }
+
+/* Controls */
+.controls { margin-top: 2vh; display: flex; gap: 5vw; justify-content: center; width: 100%; }
+.controls button { width: 40vw; max-width: 180px; }
+
+/* Responsive adjustments for smaller phones */
+@media screen and (max-width: 400px) {
+    .card { height: 45vh; padding: 0.5rem; }
+    .hide { height: 12vh; }
+    .btnStart > p { font-size: 1.3rem; }
+    .name { font-size: 0.9rem; }
+    .players { height: 45vh; }
+}
